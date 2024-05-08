@@ -6,5 +6,5 @@ import pymongo
 
 def schools_by_topic(mongo_collection, topic):
     """schools_by_topic"""
-    for i in mongo_collection:
-        return mongo_collection.find({"topics": topic})
+    for i in mongo_collection.find({"topics": topic}):
+        return i
