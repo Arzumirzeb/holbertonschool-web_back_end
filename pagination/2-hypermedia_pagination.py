@@ -25,6 +25,7 @@ class Server:
             self.__dataset = dataset[1:]
 
         return self.__dataset
+
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """get_page"""
         assert type(page) == int and page > 0
@@ -39,7 +40,7 @@ class Server:
         return res_list[start:end]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Any]:
-        """ Returns a object """
+        """get_hyper """
         assert type(page) == int and page > 0
         assert type(page_size) == int and page_size > 0
 
