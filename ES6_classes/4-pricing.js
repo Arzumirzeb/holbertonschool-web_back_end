@@ -1,8 +1,8 @@
 /* eslint-disable */
 export default class Pricing {
 	constructor(amount, currency){
-	  this.__amount = amount;
-	  this.__currency = currency;
+	  this._amount = amount;
+	  this._currency = currency;
 	}
 	
 	displayFullPrice(){
