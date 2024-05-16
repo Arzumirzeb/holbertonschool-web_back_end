@@ -14,14 +14,13 @@ export default class Pricing {
 	static convertPrice(amount, conversionRate) {
 		return amount * conversionRate;
 	}
-	
+
 	set amount(newAmount) {
     		this._amount = newAmount;
   	}
 
-  	set currency(newCurrency) {
-    		if (!(newCurrency instanceof Currency)) throw TypeError('currency must be an instance of Currency');
-    		this._currency = newCurrency;
+  	set currency(currency) {
+    		this._currency = currency;
   	}
 
   	get amount() {
