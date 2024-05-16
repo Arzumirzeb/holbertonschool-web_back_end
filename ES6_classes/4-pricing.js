@@ -14,6 +14,7 @@ export default class Pricing {
 	static convertPrice(amount, conversionRate) {
 		return amount * conversionRate;
 	}
+	
 	set amount(newAmount) {
     		this._amount = newAmount;
   	}
