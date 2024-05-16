@@ -3,13 +3,14 @@ import Currency from './3-currency.js';
 
 export default class Pricing {
 	constructor(amount, currency){
-	this.__amount = amount;
-	this.__currency = currency;
+	  this.__amount = amount;
+	  this.__currency = currency;
 	}
 	
 	displayFullPrice(){
 		return (`${this.amount} ${this.currency.name} (${this.currency.code})`);
 	}
+
 	static convertPrice(amount, conversionRate) {
 		return amount * conversionRate;
 	}
